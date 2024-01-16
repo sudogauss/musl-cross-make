@@ -11,3 +11,7 @@
 /linux-*/
 /isl-*/
 /build/
+
+#IDE
+
+.vscode/

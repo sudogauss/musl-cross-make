@@ -1,6 +1,17 @@
-TARGET = sh2eb-linux-musl
+TARGET = arm-linux-musleabi
+OUTPUT = /workspace/compilers/arm-linux-musleabi
+GCC_VER = 6.5.0
+MUSL_VER = git-master
+SHA1_CMD = sha1sum -c
 GCC_CONFIG += --with-cpu=mj2
 GCC_CONFIG += --enable-default-pie
+
+# COMMON_CONFIG += --disable-nls
+# GCC_CONFIG += --disable-libquadmath --disable-decimal-float
+# GCC_CONFIG += --disable-libitm
+# GCC_CONFIG += --disable-fixed-point
+# GCC_CONFIG += --disable-lto
+# GCC_CONFIG += --enable-languages=c,c++
 
 # This configuration should be compatible with the old GPLv2 tools,
 # but it is not regularly tested. Uncomment the following and remove
